@@ -1,0 +1,75 @@
+/* ABOUT SECTION STYLES */
+
+.about {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(45, 45, 45, 0.3));
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.about-card {
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-accent {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, var(--accent-orange), transparent);
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+.about-card h3 {
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.about-card:hover {
+  border-color: rgba(255, 106, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(255, 106, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-card {
+    padding: 30px;
+  }
+}

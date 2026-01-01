@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoForge Systems - AI Automation & Enterprise Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-cogs"></i> AutoForge
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Why Us</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="scroll-indicator"></div>
+    </nav>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="progress-bar"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-blur-1"></div>
+            <div class="gradient-blur-2"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word">Engineering</span>
+                    <span class="title-word">Intelligent</span>
+                    <span class="title-word">Automation</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered systems, automation, and modern digital solutions for growing businesses.
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+                        Get a Free Consultation
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' })">
+                        View Our Services
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-inner">
+                        <i class="fas fa-robot"></i>
+                        <p>AI Automation</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-2">
+                    <div class="card-inner">
+                        <i class="fas fa-cogs"></i>
+                        <p>Custom Solutions</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-4">
+                    <div class="card-inner">
+                        <i class="fas fa-bolt"></i>
+                        <p>Enterprise Grade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="stat">
+                <h3>30+</h3>
+                <p>Enterprise Clients</p>
+            </div>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Years Combined Experience</p>
+            </div>
+        </div>
+
+        <div class="scroll-indicator-hero">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About AutoForge Systems</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card reveal-card">
+                    <div class="card-accent"></div>
+                    <h3>Who We Are</h3>
+                    <p>We are a team of expert engineers, AI specialists, and business strategists dedicated to transforming businesses through intelligent automation and modern digital solutions.</p>
+                </div>
+                
+                <div class="about-card reveal-card" style="transition-delay: 0.1s">
+                    <div class="card-accent"></div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses with cutting-edge AI and automation technologies that streamline operations, reduce costs, and unlock exponential growth.</p>
+                </div>
+                
+                <div class="about-card reveal-card" style="transition-delay: 0.2s">
+                    <div class="card-accent"></div>
+                    <h3>Our Vision</h3>
+                    <p>A world where intelligent automation is accessible to every business, enabling teams to focus on strategic growth and innovation rather than repetitive tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Do</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Automation Systems</h3>
+                        <p>Intelligent systems that learn, adapt, and automate complex business processes with minimal human intervention.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Business Process Automation</h3>
+                        <p>Streamline workflows, eliminate bottlenecks, and accelerate execution across your organization.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Website & Web App Development</h3>
+                        <p>Modern, scalable, and high-performance web solutions built with the latest technologies.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Custom Software Solutions</h3>
+                        <p>Bespoke software designed specifically for your business needs and technical requirements.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Payment & Subscription Systems</h3>
+                        <p>Secure, scalable payment infrastructure and subscription management for modern businesses.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>CRM & Operations Automation</h3>
+                        <p>Manage customer relationships and operations with intelligent, automated systems.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-comments-dollar"></i>
+                        </div>
+                        <h3>AI Chatbots & Assistants</h3>
+                        <p>Intelligent conversational AI that engages customers, answers questions, and drives conversions 24/7.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Industry-Specific Solutions</h3>
+                        <p>Tailored automation solutions for healthcare, finance, retail, manufacturing, and more.</p>
+                    </div>
+                    <div class="card-accent-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES/WHY US SECTION -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose AutoForge</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="features-left">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <h3>AI-First Approach</h3>
+                        <p>Every solution is built with intelligent automation at its core, ensuring maximum efficiency and scalability.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <h3>Custom-Built Solutions</h3>
+                        <p>No templates. Every system is engineered specifically for your business, industry, and goals.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <h3>Scalable Architecture</h3>
+                        <p>Built to grow with your business. Our solutions scale seamlessly from startup to enterprise.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">04</div>
+                        <h3>Security First</h3>
+                        <p>Enterprise-grade security, compliance, and data protection built into every system.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">05</div>
+                        <h3>Dedicated Support</h3>
+                        <p>Direct access to our technical team. Ongoing support and optimization for your solutions.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">06</div>
+                        <h3>Long-Term Partnership</h3>
+                        <p>We don't just build and leave. We're invested in your success and growth over time.</p>
+                    </div>
+                </div>
+                
+                <div class="features-right">
+                    <div class="feature-visual">
+                        <div class="visual-element">
+                            <div class="element-1"></div>
+                            <div class="element-2"></div>
+                            <div class="element-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Discovery</h3>
+                        <p>We dive deep into understanding your business, challenges, and goals to create the perfect roadmap.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Strategy</h3>
+                        <p>Develop a comprehensive automation strategy that addresses your pain points and drives ROI.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Design</h3>
+                        <p>Architect elegant solutions with user experience and performance as core priorities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Development</h3>
+                        <p>Build robust, scalable systems using best practices and cutting-edge technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>Automation</h3>
+                        <p>Implement and integrate AI automation workflows into your existing infrastructure.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3>Support & Scaling</h3>
+                        <p>Launch with confidence. Continuous support, monitoring, and optimization as you scale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>AI Automation Platform</h3>
+                        <p>Enterprise-grade automation dashboard for Fortune 500 company</p>
+                        <span class="tech-tag">AI • Automation • Dashboard</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #0f1419 0%, #1a202c 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce with AI-powered recommendations</p>
+                        <span class="tech-tag">React • AI • Payment Systems</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>Chatbot System</h3>
+                        <p>Multi-language AI chatbot for customer support</p>
+                        <span class="tech-tag">NLP • ChatGPT API • Integration</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #0d0221 0%, #1f0747 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>CRM Automation</h3>
+                        <p>Custom CRM with workflow automation and analytics</p>
+                        <span class="tech-tag">CRM • Automation • Analytics</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #1a0033 0%, #330066 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>Business Intelligence</h3>
+                        <p>Real-time analytics and reporting system</p>
+                        <span class="tech-tag">Data Analytics • BI • Cloud</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card" style="background: linear-gradient(135deg, #2d1b00 0%, #663300 100%)">
+                    <div class="portfolio-overlay">
+                        <h3>Invoice Automation</h3>
+                        <p>Intelligent invoice processing with OCR and AI</p>
+                        <span class="tech-tag">OCR • AI • Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"AutoForge completely transformed how we manage our operations. The AI automation system they built reduced our manual work by 70% in just 3 months."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Sarah Chen</div>
+                        <div class="author-title">VP Operations, TechCorp</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, knowledgeable, and results-driven. The AutoForge team understood our business and delivered exactly what we needed. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Marcus Johnson</div>
+                        <div class="author-title">CEO, Financial Services Inc</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The chatbot solution they built for us increased customer satisfaction by 35%. The ongoing support and optimization is exceptional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Emma Rodriguez</div>
+                        <div class="author-title">Director, E-Commerce Operations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-nav">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDERS SECTION -->
+    <section class="founders">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Founders</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <h3>Alexander Reid</h3>
+                    <p class="founder-role">Co-Founder & CEO</p>
+                    <p class="founder-bio">AI systems architect with 8+ years building enterprise automation solutions for Fortune 500 companies.</p>
+                    <div class="founder-quote">"We believe AI should empower businesses, not replace them."</div>
+                </div>
+
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <h3>Victoria Chen</h3>
+                    <p class="founder-role">Co-Founder & CTO</p>
+                    <p class="founder-bio">Full-stack engineer specializing in scalable systems and cloud infrastructure. MIT grad with startup experience.</p>
+                    <div class="founder-quote">"Technology should be elegant, powerful, and built to last."</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Build Something Great</h2>
+                <p class="section-subtitle">Ready to transform your business with AI and automation?</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="your@email.com" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                        <label for="phone">Phone</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="requirement" required>
+                            <option value="">Select Your Requirement</option>
+                            <option value="ai-automation">AI Automation System</option>
+                            <option value="web-app">Website & Web App</option>
+                            <option value="custom-software">Custom Software</option>
+                            <option value="crm-automation">CRM Automation</option>
+                            <option value="chatbot">AI Chatbot</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="requirement">Requirement</label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <textarea id="message" placeholder="Tell us about your project..." rows="5"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary large">
+                        Send Request
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@autoforgesystems.com">hello@autoforgesystems.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA<br>New York, NY</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1917699999997!2d-122.40825!3d37.78994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2d5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="400" style="border:none; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>AutoForge Systems</h4>
+                    <p>Engineering intelligent automation and modern digital solutions for growing businesses.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">AI Automation Systems</a></li>
+                        <li><a href="#services">Business Process Automation</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Custom Software</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoForge Systems. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
