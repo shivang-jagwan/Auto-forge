@@ -1,7 +1,33 @@
 /* PROCESS SECTION STYLES */
 
 .process {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(45, 45, 45, 0.3));
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.7), rgba(26, 26, 26, 0.5));
+  position: relative;
+  overflow: hidden;
+}
+
+.process::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.08), transparent);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.process::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.06), transparent);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .timeline {

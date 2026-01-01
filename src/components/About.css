@@ -1,7 +1,33 @@
 /* ABOUT SECTION STYLES */
 
 .about {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(45, 45, 45, 0.3));
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.7), rgba(45, 45, 45, 0.5));
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.1), transparent);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.08), transparent);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 .about-grid {

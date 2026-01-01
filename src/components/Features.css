@@ -1,7 +1,27 @@
 /* FEATURES SECTION STYLES */
 
 .features {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.5), rgba(45, 45, 45, 0.3));
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.4));
+  position: relative;
+  overflow: hidden;
+}
+
+.features::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -15%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.1), transparent);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float 15s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
 }
 
 .features-grid {
