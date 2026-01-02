@@ -11,8 +11,8 @@
   position: absolute;
   top: -20%;
   right: -15%;
-  width: 700px;
-  height: 700px;
+  width: min(700px, 90vw);
+  height: min(700px, 90vw);
   background: radial-gradient(circle, rgba(255, 106, 0, 0.1), transparent);
   border-radius: 50%;
   z-index: 0;
@@ -27,43 +27,44 @@
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: clamp(40px, 8vw, 100px);
   align-items: center;
 }
 
 .feature-item {
   position: relative;
-  padding-left: 100px;
-  margin-bottom: 40px;
+  padding-left: clamp(55px, 8vw, 100px);
+  margin-bottom: clamp(20px, 4vw, 40px);
   display: flex;
-  gap: 20px;
+  gap: clamp(12px, 2vw, 20px);
 }
 
 .feature-number {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 48px;
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 900;
   background: linear-gradient(135deg, var(--accent-orange), var(--accent-yellow));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  min-width: 80px;
+  min-width: clamp(50px, 7vw, 80px);
 }
 
 .feature-item h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  margin-bottom: clamp(8px, 1vw, 12px);
 }
 
 .feature-item p {
   color: var(--text-muted);
+  font-size: clamp(0.8125rem, 1.1vw, 0.9375rem);
 }
 
 .feature-visual {
   position: relative;
-  height: 500px;
+  height: clamp(200px, 40vw, 500px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +72,8 @@
 
 .visual-element {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: clamp(180px, 28vw, 300px);
+  height: clamp(180px, 28vw, 300px);
 }
 
 .element-1,
@@ -86,23 +87,24 @@
 }
 
 .element-1 {
-  width: 300px;
-  height: 300px;
+  width: clamp(180px, 28vw, 300px);
+  height: clamp(180px, 28vw, 300px);
   border: 2px solid rgba(255, 106, 0, 0.3);
 }
 
 .element-2 {
-  width: 200px;
-  height: 200px;
+  width: clamp(120px, 18vw, 200px);
+  height: clamp(120px, 18vw, 200px);
   border: 2px solid rgba(255, 193, 7, 0.3);
 }
 
 .element-3 {
-  width: 100px;
-  height: 100px;
+  width: clamp(60px, 9vw, 100px);
+  height: clamp(60px, 9vw, 100px);
   border: 2px solid rgba(255, 106, 0, 0.5);
 }
 
+/* Tablet - Stack layout */
 @media (max-width: 1024px) {
   .features-grid {
     grid-template-columns: 1fr;
@@ -110,145 +112,32 @@
   }
 
   .feature-visual {
-    height: 300px;
-  }
-
-  .feature-number {
-    font-size: 40px;
-  }
-
-  .feature-item {
-    padding-left: 80px;
-    margin-bottom: 35px;
+    order: -1;
+    height: 280px;
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
-  .features-grid {
-    gap: 30px;
-  }
-
   .feature-visual {
-    height: 250px;
-  }
-
-  .visual-element {
-    width: 250px;
-    height: 250px;
-  }
-
-  .element-1 {
-    width: 250px;
-    height: 250px;
-  }
-
-  .element-2 {
-    width: 170px;
-    height: 170px;
-  }
-
-  .element-3 {
-    width: 90px;
-    height: 90px;
-  }
-
-  .feature-item {
-    padding-left: 70px;
-    margin-bottom: 30px;
-  }
-
-  .feature-number {
-    font-size: 36px;
-  }
-
-  .feature-item h3 {
-    font-size: 18px;
+    height: 220px;
   }
 }
 
-@media (max-width: 600px) {
-  .feature-visual {
-    height: 200px;
-  }
-
-  .visual-element {
-    width: 200px;
-    height: 200px;
-  }
-
-  .element-1 {
-    width: 200px;
-    height: 200px;
-  }
-
-  .element-2 {
-    width: 130px;
-    height: 130px;
-  }
-
-  .element-3 {
-    width: 70px;
-    height: 70px;
-  }
-
-  .feature-item {
-    padding-left: 60px;
-    margin-bottom: 25px;
-  }
-
-  .feature-number {
-    font-size: 32px;
-  }
-
-  .feature-item h3 {
-    font-size: 16px;
-  }
-
-  .feature-item p {
-    font-size: 12px;
-  }
-}
-
+/* Small Mobile */
 @media (max-width: 480px) {
-  .feature-visual {
-    height: 150px;
-  }
-
-  .visual-element {
-    width: 150px;
-    height: 150px;
-  }
-
-  .element-1 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .element-2 {
-    width: 100px;
-    height: 100px;
-  }
-
-  .element-3 {
-    width: 50px;
-    height: 50px;
-  }
-
   .feature-item {
     padding-left: 50px;
   }
 
   .feature-number {
-    font-size: 28px;
+    min-width: 45px;
   }
 }
 
-@media (max-width: 375px) {
-  .feature-item {
-    padding-left: 45px;
-  }
-
-  .feature-number {
-    font-size: 24px;
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .features::before {
+    animation: none;
   }
 }

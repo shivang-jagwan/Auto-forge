@@ -11,8 +11,8 @@
   position: absolute;
   top: -50%;
   right: -10%;
-  width: 600px;
-  height: 600px;
+  width: min(600px, 80vw);
+  height: min(600px, 80vw);
   background: radial-gradient(circle, rgba(255, 106, 0, 0.1), transparent);
   border-radius: 50%;
   z-index: 0;
@@ -23,8 +23,8 @@
   position: absolute;
   bottom: -30%;
   left: 0;
-  width: 500px;
-  height: 500px;
+  width: min(500px, 70vw);
+  height: min(500px, 70vw);
   background: radial-gradient(circle, rgba(255, 193, 7, 0.08), transparent);
   border-radius: 50%;
   z-index: 0;
@@ -32,12 +32,12 @@
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: clamp(20px, 4vw, 40px);
 }
 
 .about-card {
-  padding: 40px;
+  padding: clamp(20px, 4vw, 40px);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -65,23 +65,25 @@
   position: absolute;
   top: -50%;
   right: -50%;
-  width: 200px;
-  height: 200px;
+  width: clamp(120px, 20vw, 200px);
+  height: clamp(120px, 20vw, 200px);
   background: radial-gradient(circle, var(--accent-orange), transparent);
   opacity: 0.1;
   border-radius: 50%;
 }
 
 .about-card h3 {
-  margin-bottom: 16px;
+  margin-bottom: clamp(12px, 1.5vw, 16px);
   position: relative;
   z-index: 1;
+  font-size: clamp(1rem, 1.8vw, 1.375rem);
 }
 
 .about-card p {
   color: var(--text-muted);
   position: relative;
   z-index: 1;
+  font-size: clamp(0.8125rem, 1.2vw, 0.9375rem);
 }
 
 .about-card:hover {
@@ -89,74 +91,24 @@
   box-shadow: 0 20px 40px rgba(255, 106, 0, 0.1);
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   .about-grid {
-    gap: 35px;
-  }
-
-  .about-card {
-    padding: 35px;
-  }
-
-  .about-card h3 {
-    font-size: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .about-card {
-    padding: 28px;
-  }
-
-  .about-card h3 {
-    font-size: 18px;
-    margin-bottom: 14px;
-  }
-
-  .about-card p {
-    font-size: 13px;
   }
 }
 
-@media (max-width: 600px) {
-  .about-grid {
-    gap: 18px;
-  }
-
-  .about-card {
-    padding: 24px;
-  }
-
-  .about-card h3 {
-    font-size: 16px;
-  }
-
-  .about-card p {
-    font-size: 12px;
-  }
-
-  .card-accent {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-card {
-    padding: 20px;
-  }
-
-  .about-card h3 {
-    font-size: 15px;
-  }
-
-  .card-accent {
-    width: 120px;
-    height: 120px;
+/* Touch devices - disable hover effects that might interfere */
+@media (hover: none) and (pointer: coarse) {
+  .about-card::before {
+    transform: scaleX(1);
+    opacity: 0.5;
   }
 }

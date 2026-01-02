@@ -1,19 +1,20 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { useScrollY } from '../hooks/useScroll'
 import './Hero.css'
 
 export const Hero: React.FC = () => {
   const scrollY = useScrollY()
+  const prefersReducedMotion = useReducedMotion()
 
   const titleVariants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: prefersReducedMotion ? 0 : 40 },
     visible: (index: number) => ({
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
-        delay: 0.1 + index * 0.15,
+        duration: prefersReducedMotion ? 0 : 0.8,
+        delay: prefersReducedMotion ? 0 : 0.1 + index * 0.15,
         ease: 'easeOut'
       }
     })
@@ -23,7 +24,7 @@ export const Hero: React.FC = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.8, delay: 0.4, ease: 'easeOut' }
+      transition: { duration: prefersReducedMotion ? 0 : 0.8, delay: prefersReducedMotion ? 0 : 0.4, ease: 'easeOut' }
     }
   }
 
@@ -31,12 +32,12 @@ export const Hero: React.FC = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.8, delay: 0.5, ease: 'easeOut' }
+      transition: { duration: prefersReducedMotion ? 0 : 0.8, delay: prefersReducedMotion ? 0 : 0.5, ease: 'easeOut' }
     }
   }
 
   const floatingVariants = {
-    animate: {
+    animate: prefersReducedMotion ? {} : {
       y: [0, -20, 0],
       transition: {
         duration: 4,
@@ -51,19 +52,19 @@ export const Hero: React.FC = () => {
       {/* Animated Background */}
       <motion.div 
         className="hero-bg"
-        style={{ 
+        style={prefersReducedMotion ? {} : { 
           y: scrollY * 0.5,
           opacity: Math.max(1 - scrollY / 800, 0)
         }}
       >
         <motion.div
           className="gradient-blur gradient-blur-1"
-          animate={{ y: [0, 30, 0] }}
+          animate={prefersReducedMotion ? {} : { y: [0, 30, 0] }}
           transition={{ duration: 8, ease: 'easeInOut', repeat: Infinity }}
         />
         <motion.div
           className="gradient-blur gradient-blur-2"
-          animate={{ y: [0, -30, 0] }}
+          animate={prefersReducedMotion ? {} : { y: [0, -30, 0] }}
           transition={{ duration: 10, ease: 'easeInOut', repeat: Infinity, delay: 1 }}
         />
       </motion.div>
